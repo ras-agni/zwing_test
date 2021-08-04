@@ -316,6 +316,11 @@ select {
   letter-spacing: 0.3px;
 }
 
+.main_content .main .total_payment i {
+  position: relative;
+  top: -2px;
+}
+
 table {
   border-spacing: 0 15px;
 }
@@ -393,5 +398,78 @@ tbody tr td:last-child {
 
 tbody::-webkit-scrollbar {
   display: none;
+}
+
+.invoice_no {
+  min-width: 106px;
+}
+
+.d-smaller-block {
+  display: none;
+}
+
+/* For small screen */
+@media only screen and (max-width: 768px) {
+  .d-smaller-none {
+    display: none;
+  }
+  .sidebar {
+    width: 100px;
+  }
+  .sidebar ul li .material-icons {
+    font-size: 17px;
+  }
+  .sidebar ul li .fa {
+    font-size: 17px;
+  }
+  .d-smaller-block {
+    display: block;
+  }
+  .main_content .main .total_payment {
+    width: 100%;
+  }
+  .main_content {
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .d-md-block {
+    display: block;
+  }
+  .d-md-none {
+    display: none;
+  }
+  .main_content .main .total_payment {
+    width: 100%;
+  }
+  .powered_by_div {
+    width: auto;
+  }
+  .powered_by_msg {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .integration_alery {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 988px) {
+  .main_content {
+    padding: 0 78px 0 62px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .main_content {
+    padding: 0 38px 0 22px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .powered_by_div {
+    display: none;
+  }
 }
 /*# sourceMappingURL=zwing_test.css.map */

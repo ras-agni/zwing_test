@@ -20,17 +20,36 @@
   <body>
     <div class="d-flex">
       <div class="sidebar position-relative">
-        <div class="logo">Quicksend</div>
+        <div class="logo">
+          <span class="d-smaller-none">Quicksend</span
+          ><span class="d-smaller-block" title="Quicksend">Q</span>
+        </div>
         <ul class="list-unstyled">
-          <li><i class="fa fa-home"></i>HOME</li>
-          <li><i class="material-icons">palette</i>DESIGNS</li>
-          <li><i class="material-icons">share</i>SHARE</li>
-          <li class="active"><i class="fa fa-file-text-o"></i>PAYMENTS</li>
-          <li><i class="material-icons">settings</i>SETTINGS</li>
+          <li>
+            <i class="fa fa-home" title="Home"></i>
+            <span class="d-smaller-none">HOME</span>
+          </li>
+          <li>
+            <i class="material-icons" title="Designs">palette</i
+            ><span class="d-smaller-none">DESIGNS</span>
+          </li>
+          <li>
+            <i class="material-icons" title="Share">share</i
+            ><span class="d-smaller-none">SHARE</span>
+          </li>
+          <li class="active">
+            <i class="fa fa-file-text-o" title="Payments"></i
+            ><span class="d-smaller-none">PAYMENTS</span>
+          </li>
+          <li>
+            <i class="material-icons" title="Settings">settings</i
+            ><span class="d-smaller-none">SETTINGS</span>
+          </li>
         </ul>
         <ul class="list-unstyled">
           <li class="support position-absolute w-100">
-            <i class="fa fa-align-center"></i>Support
+            <i class="fa fa-align-center" title="Support"></i>
+            <span class="d-smaller-none">SUPPORT</span>
           </li>
         </ul>
         <div class="divider position-absolute"></div>
@@ -50,10 +69,10 @@
                 <div class="float-left font13 total_received">
                   TOTAL RECEIVED
                 </div>
-                <span class="font36">84,254.58</span><br />
-                <span class="alert alert-success d-block mt-2"
-                  >+10% since last month</span
-                >
+                <div class="font36">84,254.58</div>
+                <div class="alert alert-success mt-2 float-left">
+                  +10% since last month
+                </div>
               </div>
               <div>
                 <div class="text-primary font10 bold pending_status">
@@ -67,15 +86,36 @@
               </div>
             </div>
           </div>
-          <div class="total_payment float-left">
+          <div class="total_payment float-left powered_by_div">
             <div class="d-block w-100">
-              <div class="float-left font16">Powered by Quickpay</div>
-              <div class="float-right alert alert-primary">Integration</div>
+              <div class="float-left font16 powered_by_msg">
+                Powered by Quickpay
+              </div>
+              <div class="float-right alert alert-primary integration_alery">
+                Integration
+              </div>
             </div>
-            <div class="font11 clearboth pt-2 text-default quickpay_note">
+            <div
+              class="
+                font11
+                clearboth
+                pt-2
+                text-default
+                quickpay_note
+                d-smaller-none d-md-none
+              "
+            >
               Quickpay lets you receive payments on the fly.<br />
               Easily generate invoices that are print-ready, or simply share
               payment link via SMS/E-mail to request payment.
+            </div>
+            <div class="float-left">
+              <i
+                class="material-icons d-smaller-block d-md-block"
+                title="Quickpay lets you receive payments on the fly. Easily generate invoices that are print-ready, or simply share
+          payment link via SMS/E-mail to request payment."
+                >info</i
+              >
             </div>
           </div>
         </div>
@@ -123,7 +163,7 @@
           <table class="w-100">
             <thead>
               <tr>
-                <th class="text-left">Invoice Number</th>
+                <th class="text-left invoice_no">Invoice Number</th>
                 <th class="text-left">Date</th>
                 <th class="text-left">Client</th>
                 <th class="text-right">Amount</th>
