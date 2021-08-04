@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Design Template for zwing test" />
+    <title>Zwing Design Template Test</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./sass/zwing_test.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="sidebar">
+        <div class="logo">Quicksend</div>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-home"></i>HOME</li>
+          <li><i class="material-icons">palette</i>DESIGNS</li>
+          <li><i class="material-icons">share</i>SHARE</li>
+          <li><i class="fa fa-file-text-o"></i>PAYMENTS</li>
+          <li><i class="material-icons">settings</i>SETTINGS</li>
+        </ul>
+        <ul class="list-unstyled">
+          <li class="support position-absolute">
+            <i class="fa fa-align-center"></i>Support
+          </li>
+        </ul>
+        <div class="divider"></div>
+      </div>
+      <div class="main_content">
+        <div class="header">
+          <span>Payments</span>
+          <div class="float-right">Good Evening, Jatin</div>
+        </div>
+        <div class="main">
+          <div class="total_payment float-left">hjbm</div>
+          <div class="total_payment float-left">
+            <span class="float-left">Powered by Quickpay</span>
+            <span class="float-right alert alert-info">Integration</span>
+            <div>
+              Quickpay lets you receive payments on the fly. Easily generate
+              invoices that are print-ready, or simply share payment link via
+              SMS/E-mail to request payment.
+            </div>
+          </div>
+        </div>
+        <section class="mb-3">
+          <div class="d-flex w-100">
+            <div class="w-50">
+              <span class="font18">Invoices</span>
+              <div class="font13 text-default pt-1">
+                Find your recent transactions below.
+              </div>
+            </div>
+            <div class="w-50 text-right">
+              <button
+                type="button"
+                id="new_invoice_btn"
+                name="new_invoice_btn"
+                class="btn-primary"
+              >
+                + NEW INVOICE
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex">
+          <div class="float-left position-relative w-100">
+            <span class="material-icons position-absolute search_icon">
+              search
+            </span>
+            <input
+              type="text"
+              class="float-left"
+              placeholder="Search Invoices"
+            />
+          </div>
+          <select class="float-right">
+            <option>This Week</option>
+            <option>Last Week</option>
+            <option>Date Range</option>
+            <option>All Time</option>
+          </select>
+        </section>
+        <section>
+          <table class="w-100">
+            <thead>
+              <tr>
+                <th class="text-left">Invoice Number</th>
+                <th class="text-left">Date</th>
+                <th class="text-left">Client</th>
+                <th class="text-right">Amount</th>
+                <th class="text-right">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left">#JB20210730003</td>
+                <td class="text-left">Jul 30, 2021</td>
+                <td class="text-left">Biskoot Pvt. Ltd</td>
+                <td class="text-right">10,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-info">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210730002</td>
+                <td class="text-left">Jul 30, 2021</td>
+                <td class="text-left">Gajendra</td>
+                <td class="text-right">5,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-info">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210730001</td>
+                <td class="text-left">Jul 30, 2021</td>
+                <td class="text-left">Anthony F.</td>
+                <td class="text-right">1,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-default">Draft</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210728004</td>
+                <td class="text-left">Jul 28, 2021</td>
+                <td class="text-left">Inder S.</td>
+                <td class="text-right">5,450.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210728003</td>
+                <td class="text-left">Jul 28, 2021</td>
+                <td class="text-left">Yogesh I.</td>
+                <td class="text-right">3,700.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210728002</td>
+                <td class="text-left">Jul 28, 2021</td>
+                <td class="text-left">Biskoot Pvt. Ltd</td>
+                <td class="text-right">10,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210728001</td>
+                <td class="text-left">Jul 28, 2021</td>
+                <td class="text-left">Amit K.</td>
+                <td class="text-right">2,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210727002</td>
+                <td class="text-left">Jul 27, 2021</td>
+                <td class="text-left">Gajendra T.</td>
+                <td class="text-right">5,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210727001</td>
+                <td class="text-left">Jul 27, 2021</td>
+                <td class="text-left">Thomas L.</td>
+                <td class="text-right">8,360.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210726003</td>
+                <td class="text-left">Jul 26, 2021</td>
+                <td class="text-left">Biskoot Pvt. Ltd</td>
+                <td class="text-right">10,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210726002</td>
+                <td class="text-left">Jul 26, 2021</td>
+                <td class="text-left">Prakash M.</td>
+                <td class="text-right">2,000.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">#JB20210726001</td>
+                <td class="text-left">Jul 26, 2021</td>
+                <td class="text-left">Charles R.</td>
+                <td class="text-right">5,600.00</td>
+                <td class="text-right">
+                  <span class="alert alert-success">Paid</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
