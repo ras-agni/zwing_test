@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="d-flex">
-      <div class="sidebar">
+      <div class="sidebar position-relative">
         <div class="logo">Quicksend</div>
         <ul class="list-unstyled">
           <li><i class="fa fa-home"></i>HOME</li>
@@ -33,13 +33,13 @@
             <i class="fa fa-align-center"></i>Support
           </li>
         </ul>
-        <div class="divider"></div>
+        <div class="divider position-absolute"></div>
       </div>
-      <div class="main_content">
+      <div class="main_content position-relative w-100">
         <div class="header">
           <span>Payments</span>
           <div class="float-right">
-            <div class="user_icon">JB</div>
+            <div class="user_icon position-relative">JB</div>
             <div class="greeting_user">Good Evening, Jatin</div>
           </div>
         </div>
@@ -70,7 +70,7 @@
           <div class="total_payment float-left">
             <div class="d-block w-100">
               <div class="float-left font16">Powered by Quickpay</div>
-              <div class="float-right alert alert-info">Integration</div>
+              <div class="float-right alert alert-primary">Integration</div>
             </div>
             <div class="font11 clearboth pt-2 text-default quickpay_note">
               Quickpay lets you receive payments on the fly.<br />
@@ -112,7 +112,7 @@
               placeholder="Search Invoices"
             />
           </div>
-          <select class="float-right">
+          <select class="float-right text-left">
             <option>This Week</option>
             <option>Last Week</option>
             <option>Date Range</option>
@@ -137,7 +137,7 @@
                 <td class="text-left">Biskoot Pvt. Ltd</td>
                 <td class="text-right">10,000.00</td>
                 <td class="text-right">
-                  <span class="alert alert-info">Pending</span>
+                  <span class="alert alert-primary">Pending</span>
                 </td>
               </tr>
               <tr>
@@ -146,7 +146,7 @@
                 <td class="text-left">Gajendra</td>
                 <td class="text-right">5,000.00</td>
                 <td class="text-right">
-                  <span class="alert alert-info">Pending</span>
+                  <span class="alert alert-primary">Pending</span>
                 </td>
               </tr>
               <tr>

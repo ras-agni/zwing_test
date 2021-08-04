@@ -15,225 +15,6 @@ body {
   list-style: none;
 }
 
-input {
-  padding: 14px 35px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  margin-right: 16px;
-  width: -webkit-fill-available;
-}
-
-select {
-  padding: 13px 11px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  text-align: left;
-  width: 155px;
-  margin-bottom: 5px;
-}
-
-.sidebar {
-  background-color: #268df4;
-  width: 26.4%;
-  color: #ffe;
-  position: relative;
-  font-family: "Quicksand", sans-serif;
-}
-
-.sidebar .logo {
-  font-size: 27px;
-  padding: 37px 37px 32px 35px;
-  font-weight: 500;
-}
-
-.sidebar ul {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2.6px;
-  padding-left: 8px;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-  padding: 23px 27px;
-}
-
-.sidebar ul li:hover {
-  background-color: #0b6fd3;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
-}
-
-.sidebar ul li .material-icons {
-  font-size: 15px;
-  vertical-align: bottom;
-  margin-right: 16px;
-}
-
-.sidebar ul li .fa {
-  font-size: 14px;
-  vertical-align: bottom;
-  margin-right: 16px;
-}
-
-.sidebar ul .active {
-  background-color: #0b6fd3;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
-}
-
-.sidebar ul li.support {
-  bottom: 27px;
-}
-
-.sidebar ul li.support i {
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-  font-size: 12px;
-}
-
-.sidebar .divider {
-  width: 15px;
-  background: #f4f4f4;
-  height: 100vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-}
-
-.main_content {
-  width: 73%;
-  padding: 0 148px 0 132px;
-  background-color: #f4f4f4;
-  float: right;
-  height: 100vh;
-  font-family: "Rubik", sans-serif !important;
-}
-
-.main_content .header {
-  padding: 43px 0;
-  font-weight: 500;
-}
-
-.main_content .header span {
-  color: #696969;
-}
-
-.main_content .header .greeting_user {
-  color: #aaa;
-  font-size: 13px;
-  float: right;
-}
-
-.main_content .main {
-  padding: 2px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.main_content .main .total_payment {
-  width: 50%;
-  background-color: #fff;
-  margin: 0 9px;
-  font-size: 12px;
-  border-radius: 10px;
-  padding: 24px 36px 23px 26px;
-}
-
-.main_content .main .total_payment .total_received {
-  letter-spacing: 1.3px;
-  margin-bottom: 3px;
-}
-
-.main_content .main .total_payment .pending_status {
-  margin-bottom: 5px;
-}
-
-table {
-  border-spacing: 0 15px;
-}
-
-thead {
-  font-size: 13px;
-  color: #aaa;
-  display: block;
-  padding-bottom: 13px;
-}
-
-thead tr {
-  position: relative;
-  top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-thead tr th {
-  padding: 0 20px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  font-weight: 400;
-}
-
-.user_icon {
-  border-radius: 50%;
-  background-color: #fff7c2;
-  color: #c4aa20;
-  border: 2px solid #bcbaaf;
-  float: right;
-  font-size: 12px;
-  padding: 6px 5px;
-  font-weight: 400;
-  position: relative;
-  top: -6px;
-  margin-left: 10px;
-}
-
-tbody {
-  display: block;
-  max-height: 185px;
-  overflow-y: scroll;
-  padding: 2px;
-}
-
-tbody tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  table-layout: fixed;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  margin-bottom: 20px;
-  font-size: 13px;
-}
-
-tbody tr td {
-  padding: 23px 18px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-tbody tr td:first-child {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-tbody tr td:last-child {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-tbody::-webkit-scrollbar {
-  display: none;
-}
-
 .text-default {
   color: #8a8a8a;
 }
@@ -307,7 +88,7 @@ tbody::-webkit-scrollbar {
   font-weight: 500;
 }
 
-.alert-info {
+.alert-primary {
   background-color: #eaf4fe;
   color: #5b9fe2;
 }
@@ -367,12 +148,6 @@ tbody::-webkit-scrollbar {
   display: block;
 }
 
-.search_icon {
-  top: 13px;
-  left: 10px;
-  font-size: 18px;
-}
-
 .mb-3 {
   margin-bottom: 34px;
 }
@@ -393,8 +168,230 @@ tbody::-webkit-scrollbar {
   margin-top: 6px;
 }
 
-.quickpay_note {
+input {
+  padding: 14px 35px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-right: 16px;
+  width: -webkit-fill-available;
+}
+
+.search_icon {
+  top: 13px;
+  left: 10px;
+  font-size: 18px;
+}
+
+select {
+  padding: 13px 11px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 155px;
+  margin-bottom: 5px;
+}
+
+.sidebar {
+  background-color: #268df4;
+  width: 26.4%;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sidebar .logo {
+  font-size: 27px;
+  padding: 37px 37px 32px 35px;
+  font-weight: 500;
+}
+
+.sidebar ul {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.6px;
+  padding-left: 8px;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  padding: 23px 27px;
+}
+
+.sidebar ul li:hover {
+  background-color: #0b6fd3;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.sidebar ul li .material-icons {
+  font-size: 15px;
+  vertical-align: bottom;
+  margin-right: 16px;
+}
+
+.sidebar ul li .fa {
+  font-size: 14px;
+  vertical-align: bottom;
+  margin-right: 16px;
+}
+
+.sidebar ul .active {
+  background-color: #0b6fd3;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.sidebar ul li.support {
+  bottom: 27px;
+}
+
+.sidebar ul li.support i {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  font-size: 12px;
+}
+
+.sidebar .divider {
+  width: 15px;
+  background: #f4f4f4;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.main_content {
+  width: 73%;
+  padding: 0 148px 0 132px;
+  background-color: #f4f4f4;
+  float: right;
+  height: 100vh;
+  z-index: 1;
+  font-family: "Rubik", sans-serif;
+}
+
+.main_content .header {
+  padding: 43px 0;
+  font-weight: 500;
+}
+
+.main_content .header span {
+  color: #696969;
+}
+
+.main_content .header .greeting_user {
+  color: #aaa;
+  font-size: 13px;
+  float: right;
+}
+
+.main_content .main {
+  padding: 2px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.main_content .main .total_payment {
+  width: 50%;
+  background-color: #fff;
+  margin: 0 9px;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 24px 36px 23px 26px;
+}
+
+.main_content .main .total_payment .total_received {
+  letter-spacing: 1.3px;
+  margin-bottom: 3px;
+}
+
+.main_content .main .total_payment .pending_status {
+  margin-bottom: 5px;
+}
+
+.main_content .main .total_payment .quickpay_note {
   line-height: 1.5;
   letter-spacing: 0.3px;
+}
+
+table {
+  border-spacing: 0 15px;
+}
+
+thead {
+  font-size: 13px;
+  color: #aaa;
+  display: block;
+  padding-bottom: 13px;
+}
+
+thead tr {
+  position: relative;
+  top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+thead tr th {
+  padding: 0 20px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-weight: 400;
+}
+
+.user_icon {
+  border-radius: 50%;
+  background-color: #fff7c2;
+  color: #c4aa20;
+  border: 2px solid #bcbaaf;
+  float: right;
+  font-size: 12px;
+  padding: 6px 5px;
+  font-weight: 400;
+  top: -6px;
+  margin-left: 10px;
+}
+
+tbody {
+  display: block;
+  max-height: 185px;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+tbody tr td {
+  padding: 23px 18px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+tbody tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+tbody::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=zwing_test.css.map */
