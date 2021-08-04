@@ -25,7 +25,7 @@
           <li><i class="fa fa-home"></i>HOME</li>
           <li><i class="material-icons">palette</i>DESIGNS</li>
           <li><i class="material-icons">share</i>SHARE</li>
-          <li><i class="fa fa-file-text-o"></i>PAYMENTS</li>
+          <li class="active"><i class="fa fa-file-text-o"></i>PAYMENTS</li>
           <li><i class="material-icons">settings</i>SETTINGS</li>
         </ul>
         <ul class="list-unstyled">
@@ -38,17 +38,44 @@
       <div class="main_content">
         <div class="header">
           <span>Payments</span>
-          <div class="float-right">Good Evening, Jatin</div>
+          <div class="float-right">
+            <div class="user_icon">JB</div>
+            <div class="greeting_user">Good Evening, Jatin</div>
+          </div>
         </div>
-        <div class="main">
-          <div class="total_payment float-left">hjbm</div>
+        <div class="main mb-3">
           <div class="total_payment float-left">
-            <span class="float-left">Powered by Quickpay</span>
-            <span class="float-right alert alert-info">Integration</span>
-            <div>
-              Quickpay lets you receive payments on the fly. Easily generate
-              invoices that are print-ready, or simply share payment link via
-              SMS/E-mail to request payment.
+            <div class="d-flex justify_content_space_btw">
+              <div>
+                <div class="float-left font13 total_received">
+                  TOTAL RECEIVED
+                </div>
+                <span class="font36">84,254.58</span><br />
+                <span class="alert alert-success d-block mt-2"
+                  >+10% since last month</span
+                >
+              </div>
+              <div>
+                <div class="text-primary font10 bold pending_status">
+                  Pending
+                </div>
+                <span class="font16">15,000.00</span>
+                <div class="mt-2">
+                  <div class="text-default font10 pt-3 pb-1">In drafts</div>
+                  <div class="font16">1,000.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total_payment float-left">
+            <div class="d-block w-100">
+              <div class="float-left font16">Powered by Quickpay</div>
+              <div class="float-right alert alert-info">Integration</div>
+            </div>
+            <div class="font11 clearboth pt-2 text-default quickpay_note">
+              Quickpay lets you receive payments on the fly.<br />
+              Easily generate invoices that are print-ready, or simply share
+              payment link via SMS/E-mail to request payment.
             </div>
           </div>
         </div>
@@ -65,7 +92,7 @@
                 type="button"
                 id="new_invoice_btn"
                 name="new_invoice_btn"
-                class="btn-primary"
+                class="btn-primary font12"
               >
                 + NEW INVOICE
               </button>
@@ -74,7 +101,9 @@
         </section>
         <section class="d-flex">
           <div class="float-left position-relative w-100">
-            <span class="material-icons position-absolute search_icon">
+            <span
+              class="material-icons position-absolute search_icon text-default"
+            >
               search
             </span>
             <input
